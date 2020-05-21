@@ -8,74 +8,86 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <div>
+            <a href="#"><img src="https://via.placeholder.com/150x100" alt="Logo"></a>
+        </div>
+        <nav class="nav">
             <ul>
-                <li><a href=blank.html>Информация</a></li>
-                <li><a href=blank.html>Фото и Видео</a></li>
-                <li><a href=index.html><img src="https://via.placeholder.com/150x100" alt=""></a></li>
-                <li><a href=blank.html>Карта штата</a></li>
-                <li><a href=hotels.html>Гостинницы</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и Видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li>Гостиницы</li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <h1>Список гостинниц</h1>
-        <section>
+        <form class="form">
             <!-- Фильтр-->
+        </form>
+        <section class="section">
+            <h2>Найдено </h2>
+            <ul>
+                <li>3</li>
+            </ul>
+            <div>Cортировка</div>
+            <ul>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
         </section>
-        <div>
-            <h2>Найдено 3</h2>
-            <div>Cортировка По цене По типу По рейтингу</div>
-        </div>
 
-        <div>
+        <section class="section">
             <ul>
                 <li>
-                    <h3>Amara Resort & Spa</h3>
-                    <p>
+                    <a href="#"><h3>Amara Resort & Spa</h3></a>
+                    <div>
                         <img src="img/hotel-1.jpg" alt="Amara Resort & Spa">
-                    </p>
-                    <p>
-                        Гостинница Oт 4000р.
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                    </p>
+                    </div>
+                    <div>
+                        <span>Гостинница</span> <span>Oт 4000р.</span>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                    </div>
                 </li>
                 <li>
-                    <h3>Desert Quail Inn</h3>
-                    <p>
+                    <a href="#"><h3>Desert Quail Inn</h3></a>
+                    
+                    <div>
                         <img src="img/hotel-2.jpg" alt="Desert Quail Inn">
-                    </p>
-                    <p>
-                        Мотель Oт 3000р.
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                    </p>
+                    </div>
+                    <div>
+                        <span>Мотель</span> <span>Oт 3000р.</span>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                    </div>
                 </li>
                 <li>
-                    <h3>Villas at Poco Diablo</h3>
-                    <p>
+                    <a href="#"><h3>Villas at Poco Diablo</h3></a>
+                    <div>
                         <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         Апартаменты Oт 2000р.
-                        <button type="button">Подробнее</button>
-                        <button type="button">Забронировать</button>
-                    </p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                    </div>
                 </li>
             </ul>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <section>
-            <p>#visitSEDONA
-                ТЕЛ: +7(495) 666-01-66
-            </p>
+    <footer class="footer">
+        <section class="section">
+            <section class="section">
+                <a href="#">#visitSEDONA</a>
+                <a href="#">ТЕЛ: +7(495) 666-01-66</a>
+            </section>
         </section>
-        <section>
+        <section class="section">
             <h2>Давайте дружить!</h2>
             <ul>
                 <li>
@@ -90,10 +102,10 @@
             </ul>
         </section>
 
-        <p>
+        <div>
             Website by:
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </div>
     </footer>
 
 </body>
