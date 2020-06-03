@@ -1,0 +1,382 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-neutral-dark: #5496BD;
+  --basic-neutral: #669EC0;
+  --basic-neutral-light: #81B3D2;
+  --basic-extra-light: #eeeeee;
+  --basic-white: #ffffff;
+
+  --basic-medium-light: #f2f2f2;
+  --basic-medium-grey: #EBEBEB;
+  --basic-medium-grey-light: #E5E5E5;
+  --basic-medium: #BDBBBC;
+  --basic-medium-grey: #CACACA;
+
+  --special-light: #766357;
+  --special: #604E43;
+  --special-dark: #503E33;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.nav {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-neutral-light);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.site-navigation a:focus {
+  color: var(--special-light);
+  outline: none;
+}
+
+/* Advantages */
+.advantages-top {
+  background-color: var(--basic-neutral);
+  color: var(--basic-white);
+  display: block;
+  text-align: center;
+}
+
+.advantages-top h2 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantages {
+  display: block;
+  background-color: var(--basic-extra-light);
+}
+
+.reasons-item h2,
+.advantages h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.advantages span {
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-extra-dark);
+}
+
+.reasons-item p,
+.advantages h3 {
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+}
+
+.interested h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.interested p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+/*Pop Up button for opening form*/
+.open-button-wrapper {
+  text-align: center;
+}
+
+.open-button {
+  width: 568px;
+  height: 86px;
+  background-color: var(--special-light);
+  vertical-align: middle;
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.open-button:hover {
+  background-color: var(--special);
+}
+
+.open-button:active {
+  background-color: var(--special-dark);
+}
+
+/*Form Calenadar*/
+.interested input {
+  background-color: var(--basic-medium-light);
+  border: none;
+}
+
+.interested input:hover {
+  background-color: var(--basic-medium-grey);
+}
+
+.interested input:focus {
+  background-color: var(--basic-white);
+  outline: none;
+  border: 2px solid var(--basic-medium-grey-light);
+}
+
+/*Submit button*/
+.button-submit-wrapper {
+  text-align: center;
+}
+
+.button-submit {
+  width: 458px;
+  height: 58px;
+  vertical-align: middle;
+  background-color: var(--basic-neutral-light);
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+}
+
+.button-submit:hover {
+  background-color: var(--basic-neutral);
+}
+
+.button-submit:active {
+  background-color: var(--basic-neutral-dark);
+  outline: none;
+}
+
+button.button-submit:focus {
+  background-color: var(--basic-neutral);
+  outline: none;
+}
+
+/* Footer */
+
+.footer {
+  color: var(--basic-black);
+}
+
+.footer-contacts a, .footer-contacts p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-social a {
+  background-color: var(--basic-neutral-light);
+  text-decoration: none;
+}
+
+
+.footer-social a:hover {
+  background-color: var(--basic-neutral);
+  text-decoration: none;
+}
+
+.footer-social a:focus, a:active {
+  background-color: var(--basic-neutral-dark);
+  text-decoration: none;
+  outline: none;
+}
+
+.footer-developer a:hover {
+  color: var(--basic-neutral);
+  text-decoration: none;
+}
+
+.footer-social-wrapper  {
+  list-style: none;
+  text-decoration: none;
+}
+
+svg path {
+  fill:inherit;
+  stroke:inherit;
+  stroke-width:inherit;
+  }
+
+.footer-developer a:hover  {
+  fill: var(--basic-neutral-light);
+}
+
+.footer-developer a:active, .footer-developer span:active {
+  color: var(--basic-medium);
+  fill: var(--basic-medium);
+  background: transparent;
+}
+
+/*Filters*/
+
+.filters legend{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+/* Hotel Page Sort navigation */
+
+.sort-navigation-wrapper ul {
+  list-style: none;
+}
+
+.sort-navigation a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed var(--basic-neutral);
+}
+
+.sort-navigation a:hover {
+  color: var(--basic-neutral);
+  opacity: 1.0;
+  border-bottom: 1px dashed var(--basic-neutral);
+}
+
+.sort-navigation a:active {
+  color: var(--basic-black);
+}
+
+.sort-navigation a:focus {
+  color: var(--basic-neutral);
+  outline: none;
+}
+
+.arrow-navigation a {
+  color: var(--basic-medium-grey);
+}
+
+.arrow-navigation a:hover {
+  color: var(--basic-black);
+}
+
+.arrow-navigation a:focus,
+a:active {
+  color: var(--basic-neutral);
+  outline: none;
+}
+
+/* Hotel Page More details link*/
+
+.hotel-about a {
+  background-color: var(--basic-neutral);
+  border: 1px transparent var(--basic-white);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+.hotel-about a:hover {
+  background-color: var(--basic-neutral);
+}
+
+.hotel-about a:active {
+  background-color: var(--basic-neutral-dark);
+}
+
+/* Hotels Page Booking link*/
+.hotel-book a {
+  background-color: var(--special);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
+}
+
+.hotel-book a:hover {
+  background-color: var(--special);
+}
+
+.hotel-book a:active {
+  background-color: var(--special-dark);
+}
+
+.hotel-about span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-book span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*Hotel name*/
+.hotel-description a {
+color: var(--basic-white);
+}
+
+.hotel-description h3 a {
+  color: var(--basic-black);
+}
+
+.hotel-description h3 a:hover {
+  color: var(--basic-neutral);
+}
+
+.hotel-description h3 a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
