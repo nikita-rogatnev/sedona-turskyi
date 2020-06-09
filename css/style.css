@@ -170,6 +170,17 @@ img {
   border: 2px solid var(--basic-medium-grey-light);
 }
 
+/*Show button Form*/
+.button {
+  background-color: transparent;
+  border: 1px solid var(--basic-black);
+}
+
+.button:hover {
+  background-color: var(--basic-medium-grey);
+}
+
+
 /*Submit button*/
 .button-submit-wrapper {
   text-align: center;
@@ -247,15 +258,11 @@ button.button-submit:focus {
   text-decoration: none;
 }
 
-svg path {
-  fill:inherit;
-  stroke:inherit;
-  stroke-width:inherit;
-  }
-
-.footer-developer a:hover  {
+.footer-developer a:hover, .footer-developer span:hover {
   fill: var(--basic-neutral-light);
+  background: transparent;
 }
+
 
 .footer-developer a:active, .footer-developer span:active {
   color: var(--basic-medium);
@@ -312,28 +319,10 @@ a:active {
   outline: none;
 }
 
-/* Hotel Page More details link*/
-
-.hotel-about a {
-  background-color: var(--basic-neutral);
-  border: 1px transparent var(--basic-white);
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 17px;
-  padding-right: 16px;
-}
-
-.hotel-about a:hover {
-  background-color: var(--basic-neutral);
-}
-
-.hotel-about a:active {
-  background-color: var(--basic-neutral-dark);
-}
-
-/* Hotels Page Booking link*/
+/*Hotel Book*/
 .hotel-book a {
-  background-color: var(--special);
+  background-color: var(--special-light);
+  color: var(--basic-white);
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -345,14 +334,8 @@ a:active {
 }
 
 .hotel-book a:active {
-  background-color: var(--special-dark);
-}
-
-.hotel-about span {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  background-color:var(--special-dark);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-book span {
@@ -362,21 +345,46 @@ a:active {
   line-height: 21px;
 }
 
-/*Hotel name*/
+/*Hotel about*/
+.hotel-about a {
+  background-color: var(--basic-neutral-light);
+  color: var(--basic-white);
+  border: 1px transparent var(--basic-white);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+.hotel-about span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-about a:hover {
+  background-color: var(--basic-neutral);
+}
+
+.hotel-about a:active {
+  background-color: var(--basic-neutral-dark);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*Hotel description*/
+
 .hotel-description a {
-color: var(--basic-white);
-}
-
-.hotel-description h3 a {
+  font-size: 21px;
+  line-height: 26px;
   color: var(--basic-black);
 }
 
-.hotel-description h3 a:hover {
-  color: var(--basic-neutral);
+.hotel-description a:hover {
+  color: var(--basic-neutral-light);
 }
 
-.hotel-description h3 a:active {
-  color: var(--basic-black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+.hotel-description a:active {
+  color:rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
