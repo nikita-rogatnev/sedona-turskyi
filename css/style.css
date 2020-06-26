@@ -39,9 +39,21 @@ img {
   height: auto;
 }
 
+
+ul.site-navigation {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Main navigation */
 
 .nav {
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -71,8 +83,24 @@ img {
 .advantages-top {
   background-color: var(--basic-neutral);
   color: var(--basic-white);
-  display: block;
+  display: flex;
+}
+
+.advantages-image {
+  width: 800px;
+}
+
+.advantages-text {
+  width: 400px;
   text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.advantages-text h3 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
 }
 
 .advantages-top h2 {
@@ -81,7 +109,7 @@ img {
 }
 
 .advantages {
-  display: block;
+  display: flex;
   background-color: var(--basic-extra-light);
 }
 
@@ -111,6 +139,14 @@ img {
   display: flex;
 }
 
+.reasons-item {
+  width: 400px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-bottom: 82px;
+}
+
+
 .interested h2 {
   font-style: normal;
   font-weight: bold;
@@ -130,9 +166,11 @@ img {
 }
 
 /*Pop Up button for opening form*/
+
 .open-button-wrapper {
   text-align: center;
 }
+
 
 .open-button {
   width: 568px;
@@ -215,8 +253,17 @@ button.button-submit:focus {
 /* Footer */
 
 .footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   color: var(--basic-black);
 }
+
+.footer-contacts {
+  width: 400px;
+  text-align: center;
+}
+
 
 .footer-contacts a, .footer-contacts p {
   font-weight: bold;
@@ -228,6 +275,7 @@ button.button-submit:focus {
 }
 
 .footer-social {
+  width: 400px;
   list-style: none;
 }
 
@@ -246,6 +294,10 @@ button.button-submit:focus {
   background-color: var(--basic-neutral-dark);
   text-decoration: none;
   outline: none;
+}
+
+.footer-developer {
+  width: 400px;
 }
 
 .footer-developer a:hover {
