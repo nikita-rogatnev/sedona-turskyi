@@ -61,7 +61,37 @@ ul.site-navigation {
 }
 
 .site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.info {
+  width: 240px;
+  padding-left: 72px;
+} 
+
+.photo_video {
+  width: 240px;
+  max-width: 240px;
+}
+
+.map {
+  width: 240px;
+  text-align: right;
+}
+
+.hotels {
+  width: 240px;
+  text-align: right;
+  padding-right: 72px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .site-navigation a:hover {
@@ -323,6 +353,16 @@ button.button-submit:focus {
 }
 
 /*Filters*/
+.filters fieldset {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filters ul {
+  list-style: none;
+}
 
 .filters legend{
   font-weight: bold;
@@ -333,8 +373,13 @@ button.button-submit:focus {
 
 /* Hotel Page Sort navigation */
 
-.sort-navigation-wrapper ul {
+.sort-navigation-wrapper ul, section ul {
   list-style: none;
+}
+
+.hotel {
+  display: flex;
+  align-items: center;
 }
 
 .sort-navigation a {
