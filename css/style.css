@@ -379,7 +379,26 @@ button.button-submit:focus {
 
 .hotel {
   display: flex;
-  align-items: center;
+}
+
+.hotel-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.hotel-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-book {
+  display: flex;
+  flex-direction: column;
 }
 
 .sort-navigation a {
@@ -471,7 +490,7 @@ a:active {
 
 /*Hotel description*/
 
-.hotel-description a {
+.hotel-description h3 {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);

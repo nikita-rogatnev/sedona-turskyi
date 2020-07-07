@@ -29,7 +29,7 @@
     <h1>Список гостинниц</h1>
     <!-- Фильтр-->
     <section class="filters">
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="form-container" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -64,11 +64,13 @@
             </li>
           </ul>
         </fieldset>
-        <p>
-          Стоимость жилья(P):
-        </p>
-        <input type="range" min="0" max="3000" step="1" value="0">
-        <button type="submit" class="button">Показать</button>
+        <fieldset>
+          <p>
+            Стоимость жилья(P):
+          </p>
+          <input type="range" min="0" max="3000" step="1" value="0">
+          <button type="submit" class="button">Показать</button>
+        </fieldset>
       </form>
     </section>
 
@@ -100,19 +102,20 @@
             </div>
             <div class="hotel-description">
               <h3><a href="#">Amara Resort & Spa</a></h3>
-            </div>
-            <div class="hotel-about">
-              <span>Гостинница</span>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="hotel-book">
-              <span>Oт 4000р.</span>
-              <a href="#">Забронировать</a>
-            </div>
-
-            <div class="hotel-rating">
-              <span></span>
-            </div>
+              <div class="hotel-wrapper">
+                <div class="hotel-about">
+                  <span>Гостинница</span>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="hotel-book">
+                  <span>Oт 4000р.</span>
+                  <a href="#">Забронировать</a>
+                </div>
+                <div>
+                </div>
+                <div class="hotel-rating">
+                  <span></span>
+                </div>
           </article>
         </li>
         <li>
@@ -122,14 +125,16 @@
             </div>
             <div class="hotel-description">
               <h3><a href="#">Desert Quail Inn</a></h3>
-            </div>
-            <div class="hotel-about">
-              <span>Мотель</span>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="hotel-book">
-              <span>Oт 3000р.</span>
-              <a href="#">Забронировать</a>
+              <div class="hotel-wrapper">
+                <div class="hotel-about">
+                  <span>Мотель</span>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="hotel-book">
+                  <span>Oт 3000р.</span>
+                  <a href="#">Забронировать</a>
+                </div>
+              </div>
             </div>
             <div class="hotel-rating">
               <span></span>
@@ -143,14 +148,16 @@
             </div>
             <div class="hotel-description">
               <h3><a href="#">Villas at Poco Diablo</a></h3>
-            </div>
-            <div class="hotel-about">
-              <span>Апартаменты</span>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="hotel-book">
-              <span>Oт 2000р.</span>
-              <a href="#">Забронировать</a>
+              <div class="hotel-wrapper">
+                <div class="hotel-about">
+                  <span>Апартаменты</span>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="hotel-book">
+                  <span>Oт 2000р.</span>
+                  <a href="#">Забронировать</a>
+                </div>
+              </div>
             </div>
             <div class="hotel-rating">
               <span></span>
