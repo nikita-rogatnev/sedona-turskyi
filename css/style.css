@@ -67,22 +67,22 @@ ul.site-navigation {
   list-style: none;
 }
 
-.info {
+.site-navigation li:first-child {
   width: 240px;
   padding-left: 72px;
 } 
 
-.photo_video {
+.site-navigation li:nth-child(2) {
   width: 240px;
   max-width: 240px;
 }
 
-.map {
+.site-navigation li:nth-child(3) {
   width: 240px;
   text-align: right;
 }
 
-.hotels {
+.site-navigation li:nth-child(4) {
   width: 240px;
   text-align: right;
   padding-right: 72px;
@@ -373,7 +373,7 @@ button.button-submit:focus {
 
 /* Hotel Page Sort navigation */
 
-.sort-navigation-wrapper ul, section ul {
+.sort-navigation-wrapper ul, hotels-section ul {
   list-style: none;
 }
 
@@ -454,7 +454,7 @@ a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotel-book span {
+.hotel-book span, .hotel-about span  {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -470,13 +470,6 @@ a:active {
   padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 16px;
-}
-
-.hotel-about span {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .hotel-about a:hover {
